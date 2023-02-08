@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Linq;
 using System.Text;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -66,7 +67,15 @@ namespace DataAccess.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-       
+        public List<ProductDetailDto> GetPoductDetails()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<ProductDetailDto> IProductDal.GetProductDetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
